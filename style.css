@@ -2,9 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color:#e9ebec ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 .wellcome{
     margin: 100px 0px 50px 0px;
@@ -15,7 +13,7 @@ body{
     box-shadow:6px 6px 10px gray ;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .loging{
     font-size: 150%;
@@ -36,4 +34,66 @@ body{
     color: white;
     border:none;
     box-shadow: 2px 2px 5px lightgreen;
+}
+#logingArea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.transction{
+    display: none;
+}
+.displayArea{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 50px;
+    color: white;
+}
+.deposit{
+ width: 20%;
+ background-color: #5e4fc1;
+ padding: 10px 10px 10px 30px;
+ border-radius: 5px;
+}
+.withdraw{
+    width: 20%;
+    background-color: #f09672;
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+}
+.balance{
+    width: 20%;
+    background-color: #ef9c0a;
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+}
+.inputArea{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+}
+.depositInputArea{
+    width: 40%;
+    padding : 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+.withdrawInputArea{
+    width: 40%;
+    padding : 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+.inputBtn{
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#359d42;
+    color: white;
+    border:none;
+    box-shadow: 2px 2px 5px lightgreen;
+}
+.input{
+    width: 90%;
 }

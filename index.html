@@ -6,16 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Won Bank</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body id='body'>
-    <h1 class= 'wellcome' id='welcomeHeadig'>Wellcome to Won Bank</h1>
-    <form class='fullForm' id='form'>
-        <legend class="loging" id='logingTitle'>Loging</legend>
-        <input type='email' class='email' id='emailInput' placeholder="Enter Your Email Address">
-        <input type='password' class='password' id='passwordInput' placeholder="Enter Your Password">
-        <br><button type="submit" class='submit' id='submitBtn'>Enter</button>    
-    </form>
-
+    <div id="logingArea">
+        <h1 class= 'wellcome' id='welcomeHeadig'>Wellcome to Won Bank</h1>
+        <form class='fullForm' id='form'>
+            <legend class="loging" id='logingTitle'>Loging</legend>
+            <input type='email' class='email' id='emailInput' placeholder="Enter Your Email Address">
+            <input type='password' class='password' id='passwordInput' placeholder="Enter Your Password">
+            <br><button type="submit" class='submit' id='submitBtn'>Enter</button>    
+        </form>
+    </div>
+    <div class="transction" id='transction'>
+        <div class="displayArea">
+            <div class="deposit">
+                <h5>Deposit</h5>
+                <h1 id= 'depositDisplay'>$<span id='currentDiposit'>00</span></h1>
+            </div>
+            <div class="withdraw">
+                <h5>Withdraw</h5>
+                <h1 id='withdrawDisplay'>$<span id='currentWithdraw'>00</span></h1>
+            </div>
+            <div class="balance">
+                <h5>Balance</h5>
+                <h1 id='balanceDisplay'>$<span id='balanceAmount'>100</span></h1>
+            </div>
+        </div>
+        <div class="inputArea">
+            <div class="depositInputArea">
+                <h1>Deposit</h1>
+                <input name='deposit' class='input' id='depositInput' type='number' placeholder="Enter Your Diposit Amount"><br><br>
+                <button class='inputBtn' id = 'dipositBtn'>Diposit</button>
+            </div>
+            <div class="withdrawInputArea">
+                <h1>Withdraw</h1>
+                <input name='withdraw' class='input' id ='withdrawInput' type='number' placeholder="Enter Your withdraw Amount"><br><br>
+                <button class='inputBtn' id = 'withdrawBtn' >withdraw</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
